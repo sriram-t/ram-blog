@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram | Engineering Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo">Ram</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#learnings">Learnings</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about" class="section">
+            <h1>Hi, I'm Ram</h1>
+            <p>Software engineer building distributed systems and AWS finance platforms. I write about architecture, data engineering, and systems design.</p>
+        </section>
+
+        <section id="blog" class="section">
+            <h2>Blog</h2>
+
+            <article class="post-item">
+                <h3>Why Stateless Excel Modeling Fails</h3>
+                <p class="post-meta">May 23, 2026 &middot; architecture, excel, finance</p>
+                <p>Real-time modeling systems require stateful execution.</p>
+            </article>
+        </section>
+
+        <section id="learnings" class="section">
+            <h2>Learnings</h2>
+
+            <article class="learning-item">
+                <h3>Lake Formation cross-account access</h3>
+                <p class="post-meta">May 2026</p>
+                <p>Upstream teams sharing data via LF won't always grant access to lower environments. Plan for prod-only testing when data is large and inaccessible elsewhere.</p>
+            </article>
+
+            <article class="learning-item">
+                <h3>Pre-compute expensive queries in ETL</h3>
+                <p class="post-meta">May 2026</p>
+                <p>SELECT DISTINCT on a large table at runtime is a performance killer. Move it to batch ETL and write to a lookup table instead.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ram. All rights reserved.</p>
+    </footer>
+</body>
+</html>
