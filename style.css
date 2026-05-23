@@ -47,7 +47,8 @@ nav .nav-links a {
     transition: color 0.2s;
 }
 
-nav .nav-links a:hover {
+nav .nav-links a:hover,
+nav .nav-links a.active {
     color: var(--accent);
 }
 
@@ -58,7 +59,7 @@ main {
 }
 
 .hero {
-    margin-bottom: 48px;
+    margin-bottom: 32px;
 }
 
 .hero h1 {
@@ -70,6 +71,34 @@ main {
 .hero p {
     color: var(--text-muted);
     font-size: 1.05rem;
+}
+
+.about {
+    margin-bottom: 48px;
+}
+
+.about h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.about p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.page-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.page-subtitle {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 32px;
 }
 
 .section {

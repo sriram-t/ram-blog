@@ -10,120 +10,25 @@
     <nav>
         <a href="/" class="logo">Ram</a>
         <div class="nav-links">
-            <a href="#blogs">Blogs</a>
-            <a href="#papershelf">Papershelf</a>
-            <a href="#bookshelf">Bookshelf</a>
-            <a href="#quotes">Quotes</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="papershelf.html">Papershelf</a>
+            <a href="bookshelf.html">Bookshelf</a>
+            <a href="quotes.html">Quotes</a>
         </div>
     </nav>
 
     <main>
-        <section id="about" class="section hero">
+        <section class="hero">
             <h1>Hi, I'm Ram</h1>
-            <p>Software engineer building distributed systems and AWS finance platforms. I write about architecture, data engineering, and systems design.</p>
+            <p>Software engineer building distributed systems and AWS finance platforms.</p>
+            <p>I write about architecture, data engineering, and systems design.</p>
         </section>
 
-        <section id="blogs" class="section">
-            <h2>Blogs</h2>
-
-            <article class="card">
-                <h3>Why Stateless Excel Modeling Fails</h3>
-                <p class="meta">May 23, 2026 &middot; architecture, excel, finance</p>
-                <p>Real-time modeling systems require stateful execution. When you model financial scenarios in a stateless environment, you lose context between computations.</p>
-            </article>
-
-            <article class="card">
-                <h3>Pre-compute Expensive Queries in ETL</h3>
-                <p class="meta">May 22, 2026 &middot; performance, etl, databases</p>
-                <p>SELECT DISTINCT on a 54B row table at runtime is a performance killer. Move it to batch ETL and write to a dedicated lookup table instead.</p>
-            </article>
-
-            <article class="card">
-                <h3>Lake Formation Cross-Account Access Patterns</h3>
-                <p class="meta">May 2026 &middot; aws, lake-formation, data</p>
-                <p>Upstream teams sharing data via LF won't always grant access to lower environments. Plan for prod-only testing when data is large and inaccessible elsewhere.</p>
-            </article>
-        </section>
-
-        <section id="papershelf" class="section">
-            <h2>Papershelf</h2>
-
-            <article class="card">
-                <h3>Dynamo: Amazon's Highly Available Key-value Store</h3>
-                <p class="meta">DeCandia et al., 2007</p>
-                <p>Foundational paper on eventual consistency, consistent hashing, and vector clocks. Shaped how I think about trade-offs in distributed storage.</p>
-            </article>
-
-            <article class="card">
-                <h3>MapReduce: Simplified Data Processing on Large Clusters</h3>
-                <p class="meta">Dean & Ghemawat, 2004</p>
-                <p>The abstraction that made large-scale batch processing accessible. Still relevant for understanding Spark and modern ETL frameworks.</p>
-            </article>
-
-            <article class="card">
-                <h3>The Log: What every software engineer should know</h3>
-                <p class="meta">Jay Kreps, 2013</p>
-                <p>Logs as the fundamental data structure for distributed systems. Changed how I approach event sourcing and data pipelines.</p>
-            </article>
-        </section>
-
-        <section id="bookshelf" class="section">
-            <h2>Bookshelf</h2>
-
-            <div class="book-grid">
-                <article class="card">
-                    <h3>Designing Data-Intensive Applications</h3>
-                    <p class="meta">Martin Kleppmann</p>
-                    <p>The single best resource for understanding distributed systems, replication, partitioning, and consistency models.</p>
-                </article>
-
-                <article class="card">
-                    <h3>System Design Interview</h3>
-                    <p class="meta">Alex Xu</p>
-                    <p>Practical walkthroughs of real-world system designs. Good for structured thinking about scale.</p>
-                </article>
-
-                <article class="card">
-                    <h3>The Phoenix Project</h3>
-                    <p class="meta">Gene Kim</p>
-                    <p>DevOps as a novel. Taught me more about organizational bottlenecks than any technical book.</p>
-                </article>
-
-                <article class="card">
-                    <h3>Clean Architecture</h3>
-                    <p class="meta">Robert C. Martin</p>
-                    <p>Dependency inversion, boundaries, and how to structure code that survives change.</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="quotes" class="section">
-            <h2>Quotes</h2>
-
-            <blockquote class="quote-card">
-                <p>"Premature optimization is the root of all evil."</p>
-                <cite>- Donald Knuth</cite>
-            </blockquote>
-
-            <blockquote class="quote-card">
-                <p>"Make it work, make it right, make it fast."</p>
-                <cite>- Kent Beck</cite>
-            </blockquote>
-
-            <blockquote class="quote-card">
-                <p>"The best way to predict the future is to implement it."</p>
-                <cite>- David Heinemeier Hansson</cite>
-            </blockquote>
-
-            <blockquote class="quote-card">
-                <p>"Simplicity is prerequisite for reliability."</p>
-                <cite>- Edsger W. Dijkstra</cite>
-            </blockquote>
-
-            <blockquote class="quote-card">
-                <p>"A distributed system is one in which the failure of a computer you didn't even know existed can render your own computer unusable."</p>
-                <cite>- Leslie Lamport</cite>
-            </blockquote>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I work on large-scale ETL pipelines processing billions of rows, real-time financial modeling systems, and cloud infrastructure on AWS. My day-to-day involves Spark, Glue, Lake Formation, CDK, and building tools that help deal desks move faster.</p>
+            <p>Previously, I've worked across the stack — from frontend React apps to backend services in Java and Scala. I care deeply about performance, simplicity, and building systems that don't break at 3am.</p>
+            <p>Outside of work, I read papers on distributed systems, tinker with side projects, and collect quotes that keep me grounded.</p>
         </section>
     </main>
 

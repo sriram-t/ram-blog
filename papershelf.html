@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papershelf | Ram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo">Ram</a>
+        <div class="nav-links">
+            <a href="blogs.html">Blogs</a>
+            <a href="papershelf.html" class="active">Papershelf</a>
+            <a href="bookshelf.html">Bookshelf</a>
+            <a href="quotes.html">Quotes</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="page-title">Papershelf</h1>
+        <p class="page-subtitle">Papers I've read and found insightful.</p>
+
+        <article class="card">
+            <h3>Dynamo: Amazon's Highly Available Key-value Store</h3>
+            <p class="meta">DeCandia et al., 2007</p>
+            <p>Foundational paper on eventual consistency, consistent hashing, and vector clocks. Shaped how I think about trade-offs in distributed storage.</p>
+        </article>
+
+        <article class="card">
+            <h3>MapReduce: Simplified Data Processing on Large Clusters</h3>
+            <p class="meta">Dean & Ghemawat, 2004</p>
+            <p>The abstraction that made large-scale batch processing accessible. Still relevant for understanding Spark and modern ETL frameworks.</p>
+        </article>
+
+        <article class="card">
+            <h3>The Log: What every software engineer should know</h3>
+            <p class="meta">Jay Kreps, 2013</p>
+            <p>Logs as the fundamental data structure for distributed systems. Changed how I approach event sourcing and data pipelines.</p>
+        </article>
+
+        <article class="card">
+            <h3>Spanner: Google's Globally-Distributed Database</h3>
+            <p class="meta">Corbett et al., 2012</p>
+            <p>How Google achieved external consistency across datacenters using TrueTime. Mind-bending approach to distributed transactions.</p>
+        </article>
+
+        <article class="card">
+            <h3>Large-scale Incremental Processing Using Distributed Transactions and Notifications</h3>
+            <p class="meta">Peng & Dabek (Percolator), 2010</p>
+            <p>Incremental processing at scale without reprocessing everything. Core ideas behind real-time ETL pipelines.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ram. All rights reserved.</p>
+    </footer>
+</body>
+</html>
