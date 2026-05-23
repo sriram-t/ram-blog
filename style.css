@@ -1,10 +1,10 @@
 :root {
-    --bg: #1a1a2e;
-    --bg-secondary: #16213e;
-    --text: #e0e0e0;
-    --text-muted: #a0a0a0;
-    --accent: #4fc3f7;
-    --border: #2a2a4a;
+    --bg: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --text: #1a1a1a;
+    --text-muted: #6b7280;
+    --accent: #2563eb;
+    --border: #e5e7eb;
     --max-width: 720px;
 }
 
@@ -25,7 +25,7 @@ body {
 nav {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 24px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +33,7 @@ nav {
 }
 
 nav .logo {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: var(--text);
     text-decoration: none;
@@ -43,7 +43,7 @@ nav .nav-links a {
     color: var(--text-muted);
     text-decoration: none;
     margin-left: 24px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     transition: color 0.2s;
 }
 
@@ -54,74 +54,112 @@ nav .nav-links a:hover {
 main {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 48px 0;
 }
 
-.section {
-    margin-bottom: 60px;
+.hero {
+    margin-bottom: 48px;
 }
 
-.section h1 {
-    font-size: 2rem;
-    margin-bottom: 12px;
-}
-
-.section h2 {
-    font-size: 1.6rem;
-    margin-bottom: 24px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--border);
-}
-
-.section > p {
-    color: var(--text-muted);
-    font-size: 1.1rem;
-}
-
-.post-item, .learning-item {
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    margin-bottom: 16px;
-    transition: border-color 0.2s, background 0.2s;
-}
-
-.post-item:hover, .learning-item:hover {
-    border-color: var(--accent);
-    background: var(--bg-secondary);
-}
-
-.post-item h3, .learning-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 6px;
-}
-
-.post-meta {
-    color: var(--text-muted);
-    font-size: 0.85rem;
+.hero h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
     margin-bottom: 8px;
 }
 
-.post-item p, .learning-item p {
+.hero p {
     color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+.section {
+    margin-bottom: 56px;
+}
+
+.section h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+.card {
+    padding: 18px 20px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+}
+
+.card h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--text);
+}
+
+.meta {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.quote-card {
+    padding: 18px 20px;
+    border-left: 3px solid var(--accent);
+    background: var(--bg-secondary);
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 12px;
+}
+
+.quote-card p {
     font-size: 0.95rem;
+    font-style: italic;
+    color: var(--text);
+    margin-bottom: 6px;
+}
+
+.quote-card cite {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-style: normal;
 }
 
 footer {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 24px 0;
     border-top: 1px solid var(--border);
     text-align: center;
     color: var(--text-muted);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 
 @media (max-width: 600px) {
-    .section h1 {
-        font-size: 1.6rem;
+    .hero h1 {
+        font-size: 1.5rem;
     }
-    .section h2 {
-        font-size: 1.3rem;
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+    nav .nav-links a {
+        margin-left: 16px;
     }
 }
